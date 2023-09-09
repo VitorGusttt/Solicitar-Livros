@@ -1,4 +1,6 @@
 <?php
+
+    session_start();
     require ('../layouts/header.html');
     require ('actions/functions.php');
     $emailFornecido = $senhaFornecida = '';
@@ -27,6 +29,8 @@
     
                 if ($senhaFornecida == $senhaCadastrada){
                     mostraMsg('ok', 'Login feito com sucesso!');
+                    $_SESSION['email'] = $emailFornecido;
+                    $_SESSION['senha'] = $senhaFornecida;
                     break;
                 }
                 else{
