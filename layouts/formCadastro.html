@@ -1,0 +1,29 @@
+<body>
+    <div class="formulario">
+        <form action="../php/fazCadastro.php" method="post">
+
+            <label for="nomeUsuario">Nome Completo:</label>
+            <input class="required" type="text" name="nomeUsuario" id="nomeUsuario">
+
+            <label for="cpfUsuario">Cpf:</label>
+            <input class="required" type="text" name="cpfUsuario" id="cpfUsuario">
+
+            <label for="emailUsuario">Email:</label>
+            <input class="required" type="email" name="emailUsuario" id="emailUsuario">
+
+            <label for="senhaUsuario">Senha:</label>
+            <input class="required" type="password" name="senhaUsuario" id="senhaUsuario">
+
+            <label for="categoriaUsuario">Categoria Usuario:</label>
+            <select name="categoriaUsuario" id="categoriaUsuario">
+                <option value="aluno">Aluno</option>
+                <option value="docente">Docente</option>
+            </select>
+
+            <button type="submit">Cadastrar-se</button>
+            <a href="../php/login.php">Já possui uma conta? Clique aqui</a>
+        </form>
+        
+    </div>
+
+</body>

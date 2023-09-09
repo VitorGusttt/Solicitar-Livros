@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana
+}
+
+html{
+    --branco: #e6e6e6;
+    --brancoBg: #f0f0f0;
+    --cinza: #2E332D;
+    --verdeClaro: #7AB081;
+    --cinzaNavbar: #636463;
+    --vermelho: #c93838;
+}
+
+body {
+    background-color: var(--brancoBg);
+    margin-top: 21em;
+}
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    background-color: var(--cinzaNavbar);
+    display: grid;
+    grid-template-rows: 2fr 1.3fr;
+    width: 100%;
+    height: 15em;
+}
+
+#nomeHeader{
+    background-color: var(--cinza);
+    gap: 1em;
+    padding: 1em;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 10px var(--verdeClaro);
+}
+
+
+#nomeHeader img{
+    width: 10em;
+    height: 100px;
+}
+
+#navbarHeader{
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbarLinks{
+    width: fit-content;
+    display: flex;
+    gap: 1em;
+    font-size: 1.2em;
+}
+
+#navbarLinks a {
+    color: var(--branco);
+    transition: 0.3s ease-in-out;
+}
+
+#navbarLinks a:hover {
+    color: var(--cinza);
+}
+
+#navbarPesquisa  {
+    padding: 0em 1em;
+    width: 40%;
+    height: 90%;
+}
+
+#navbarPesquisa form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+}
+
+#navbarPesquisa form input{
+    width: 80%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#navbarPesquisa form button{
+    border: none;
+    width: 5%;
+    height: 90%;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+#navbarPesquisa form button:hover{
+    color: var(--branco);
+    background-color: var(--cinza);
+}
+
+/* form */
+
+.formulario {
+    margin: 5em auto;
+    width: 80%;
+    height: fit-content;
+
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+
+}
+
+.formulario input{
+    border: 1px solid var(--cinzaNavbar);
+    width: 70%;
+    height: 2.5em;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.formulario input:focus{
+    box-shadow: 0px 5px 10px var(--verdeClaro) ;
+}
+
+.formulario select{
+    border: 1px solid var(--cinzaNavbar);
+    width: 70%;
+    height: 2em;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.formulario label{
+    font-size: 1.2em;
+}
+
+.formulario button{
+    width: 20%;
+    height: 2.5em;
+    font-size: 1.1em;
+    border: 1px solid var(--cinza);
+    border-radius: 20px;
+    background-color: var(--branco);
+    color: var(--cinza);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 1em;
+}
+
+.formulario button:hover{
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+
+.msg {
+    margin: 2em 0;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.erro{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-size: 0.8em;
+}
+
+.ok {
+    background-color: var(--verdeClaro);
+    color: var(--branco);
+    font-size: 0.8em;
+}
+
+.resultados-zero{
+    background-color: gainsboro;
+}
+
+/* livros */
+main{
+    width: 80%;
+    margin: 0 auto;
+    height: fit-content;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.caixaLivro{
+    width: 100%;
+    height: fit-content;
+    border-top: 1px solid var(--verdeClaro);
+    border-bottom: 1px solid var(--verdeClaro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.1em;
+}
+
+.caixaLivro img{
+    height: 12em;
+}
+
+.caixaLivro .infoLivro{
+    text-align: center;
+    font-size: 1em;
+}
+
+.caixaLivro .avaliaLivro{
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.caixaLivro .avaliaLivro .fa-thumbs-up, .fa-thumbs-down{
+    color: var(--cinza);
+    transition: 0.3s ease-in-out;
+}
+
+.caixaLivro .avaliaLivro .fa-thumbs-up:hover{
+    color: var(--verdeClaro);
+}
+
+
+.caixaLivro .avaliaLivro .fa-thumbs-down:hover{
+    color: var(--vermelho);
+}

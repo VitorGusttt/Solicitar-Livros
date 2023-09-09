@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Livros</title>
+    <!-- importar fonts/css/tudo -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CDNs para importar JQUERY e Máscaras -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#cpfUsuario").mask("000.000.000-00");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="nomeHeader">
+            <img src="../img/if.png" alt="Logo do IFPR" title="Logo do IFPR">
+            <h1>Solicitar Livros</h1>
+        </div>
+
+        <div id="navbarHeader">
+
+            <div id="navbarLinks">
+                <a href="../php/index.php" title="volta para página inicial">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+    
+    
+                <a href="../php/cadastro.php" title="cadastro ou logar">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+
+                <a href="../php/cadastroLivro.php" title="Solicitar Livros">
+                    <i class="fa-solid fa-book"></i>
+                </a>
+            </div>
+
+            <div id="navbarPesquisa">
+                <form action="../php/pesquisa.php" method="GET">
+                    <input type="text" name="pesquisaLivro" id="pesquisaLivro">
+
+                    <button type="submit" name="btnPesquisa">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </header>
+</body>
+</html>

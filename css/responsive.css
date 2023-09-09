@@ -1,0 +1,80 @@
+@media (max-width:1360px) {
+    #navbarPesquisa form button{
+        width: 7%;
+    }
+}
+
+@media (max-width:1000px) {
+
+    #navbarPesquisa form input{
+        width: 80%;
+    }
+
+    #navbarPesquisa form button{
+        width: 10%;
+    }
+
+    .formulario button{
+        width: 30%;
+    }
+}
+
+
+@media (max-width:600px) {
+
+    #navbarPesquisa{
+        width: 60%;
+    }
+
+    #navbarPesquisa form button{
+        width: 15%;
+    }
+
+    .caixaLivro img{
+        height: 10em;
+        border:none;
+    }
+
+    .caixaLivro{
+        gap: 0.5em;
+        justify-content: space-between;
+    }
+
+    .caixaLivro .infoLivro{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:400px) {
+    #navbarHeader {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header{
+        height: 20em;
+    }
+
+    #navbarPesquisa{
+        width: 60%;
+        height: 20%;
+    }
+
+    #navbarPesquisa form button{
+        height: 100%;
+    }
+
+    .caixaLivro img{
+        height: 8em;
+    }
+
+    .caixaLivro{
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .caixaLivro .infoLivro{
+        font-size: 0.8em;
+    }
+
+}
