@@ -29,6 +29,7 @@
     
                 if ($senhaFornecida == $senhaCadastrada){
                     mostraMsg('ok', 'Login feito com sucesso!');
+                    mostraMsg('ok', '<a href = "../php/login.php">Ver seus livros pedidos </a>');
                     $_SESSION['email'] = $emailFornecido;
                     $_SESSION['senha'] = $senhaFornecida;
                     break;

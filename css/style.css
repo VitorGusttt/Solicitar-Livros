@@ -189,8 +189,16 @@ header{
     font-size: 0.8em;
 }
 
+.ok a{
+    color: var(--branco);
+    font-size: 1em;
+    text-decoration: none;
+}
+
+
+
 .resultados-zero{
-    background-color: gainsboro;
+    background-color: var(--brancoBg);
 }
 
 /* livros */
