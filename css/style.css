@@ -15,7 +15,7 @@ html{
 
 body {
     background-color: var(--brancoBg);
-    margin-top: 21em;
+    margin-top: 15em;
 }
 /* header */
 header{
@@ -253,4 +253,27 @@ main{
 
 .caixaLivro .avaliaLivro .fa-thumbs-down:hover{
     color: var(--vermelho);
+}
+
+/* verConta */
+.headerConta{
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    height: 10em;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid var(--verdeClaro);
+}
+
+.headerConta img {
+    width: 9em;
+    border-radius: 50%;
+}
+
+.headerConta h3{
+    font-size: 1.4em;
 }
