@@ -15,7 +15,7 @@ html{
 
 body {
     background-color: var(--brancoBg);
-    margin-top: 15em;
+    margin-top: 21em;
 }
 /* header */
 header{
@@ -255,25 +255,27 @@ main{
     color: var(--vermelho);
 }
 
-/* verConta */
-.headerConta{
-    margin: 0 auto;
+.header-conta{
     display: flex;
-    width: 90%;
-    height: 10em;
-    padding: 1em;
-    align-items: center;
+    flex-direction:column ;
     justify-content: center;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    height: 10em;
+    width: 80%;
+    margin: 2em auto;
+}
+
+.header-conta h2{
     border-bottom: 1px solid var(--verdeClaro);
+    font-size: 2.3em;
 }
 
-.headerConta img {
-    width: 9em;
-    border-radius: 50%;
+.link_livro {
+    color: var(--cinza);
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
 }
 
-.headerConta h3{
-    font-size: 1.4em;
+.link_livro:hover{
+    font-size: 1.25em
 }

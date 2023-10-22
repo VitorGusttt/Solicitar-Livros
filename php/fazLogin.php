@@ -15,7 +15,6 @@
     if ($ok){
         $sql = "SELECT emailUsuario, senhaUsuario FROM usuario";
         $resultados = $conn->query($sql);
-        $emailEstaNoBD = FALSE;
         //enquanto houver resultado:
         while($dadosPorLinha = mysqli_fetch_assoc($resultados))
         {
@@ -25,7 +24,6 @@
             $senhaCadastrada = $dadosPorLinha['senhaUsuario'];
     
             if ($emailFornecido == $emailCadastrado){
-                $emailEstaNoBD = TRUE;
     
                 if ($senhaFornecida == $senhaCadastrada){
                     mostraMsg('ok', 'Login feito com sucesso!');
@@ -35,12 +33,9 @@
                     break;
                 }
                 else{
-                    mostraMsg('erro', 'Senha Incorreta');
+                    mostraMsg('erro', 'Senha/Email Incorreta');
                 };
             }
-            else{
-                mostraMsg('erro', 'Email nao cadastrado');
-            };
         }
     
     }
